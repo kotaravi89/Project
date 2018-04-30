@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Product adding system</title>
+</head>
+<body>
+<h3>ADD PRODUCT </h3>
+<div id="myname">
+      
+        <form method = "post"  action='/product/addProduct'>
+          <div class="container">
+               <label><b>Product Name</b></label>
+               <br> 
+               <input type='text', id="pName", name='productName', value='', placeholder='productName', required="" />
+               <br>
+               <br>
+               <label><b>productType</b></label>
+               <br> 
+               <input type='text', id="pType", name='productType', value='', placeholder='productType', required="" />
+               <br>
+               <br>
+               <label><b>Features</b></label>
+               <br> 
+               <input type='text', id="features", name='features', value='', placeholder='features', required='' />
+               <br>
+               <br>
+               <label><b>Price</b></label>
+               <br> 
+               <input type='number', id="price", name='price', value='', placeholder='price', required=''>
+               <br>
+               <br>
+               <button type="submit">ADD PRODUCT</button>
+               <br>
+               <br>
+               <h3> list of products </h3>
+
+          </div>
+        </form>
+        <form method = "get"  action='/product/alladminProducts'>
+          <div class="container">
+               <br>
+               <br>
+               <button type="submit">ALL Products</button>
+          </div>
+        </form>
+</div>
+</body>
+
+</html>
